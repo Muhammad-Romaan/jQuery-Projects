@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Tutorial</title>
+</head>
+
+<body>
+    <p>This is may jQuery Code</p>
+    <p>This is may jQuery Code</p>
+    <p>This is may jQuery Code</p>
+    <p>This is may jQuery Code</p>
+
+    <button id="btn">Toggle Now</button>
+
+    <div id="wiki">
+        The cinnamon flycatcher (Pyrrhomyias cinnamomeus) is a species of tyrant flycatcher found in the cloud forests
+        of the Andes and other South American mountain ranges, from Venezuela and Colombia south to Argentina. With a
+        length of 11 to 13 cm (4.3 to 5.1 in), it has cinnamon-rufous underparts, mainly olive-brown upperparts, and
+        black wings with two rufous wing bars. It inhabits foothill and montane forest, particularly brushy clearings
+        and forest edges. The cinnamon flycatcher feeds on arthropods, capturing prey in mid-air during short flights
+        from exposed perches, but also eats berries. It typically forages in pairs and joins mixed-species flocks. It is
+        classified as a least-concern species by the International Union for Conservation of Nature. This cinnamon
+        flycatcher of the subspecies P. c. pyrrhopterus was photographed in Quijos Canton, Ecuador.
+    </div>
+
+    <form>
+        <input type="text">
+        <textarea id="ta">this is value my text area</textarea>
+    </form>
+</body>
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+    $(document).ready(function () {
+        console.log("I am in a new file now");
+        console.log("We are using jQuer");
+        //$('p').click(function () {
+        //  console.log("You clicked in p", this);
+        //});
+
+        //     $('p').dblclick(function () {
+        //        console.log("You doubled clicked on p", this);
+        // });
+
+        //     $('p').mouseenter(function () {
+        //         console.log("You entered : ", this);
+        //     });
+
+        //     $('p').hover(function () {
+        //        console.log("You hovered on : ", this);
+        //    },
+        //        function () {
+        //            console.log('Thanks For Coming');
+        //        });
+
+        //Events in jQuery
+
+        //Mouse events = click, dblclick, mouseenter, mouseleave
+        //Keyboard events = keypress, keydown, MediakeyStatusMap
+        //Form events = submit, change, foucs, blur
+        //document/window events = load, resize, scroll, unload
+
+        $('p').on({
+            click: function () {
+                console.log("Thanks for clicking", this);
+            },
+            mouseleave: function () {
+                console.log("Mouse Leaver");
+            }
+        });
+
+        // $('#wiki').hide(1000, function () {
+        //   console.log("hidden");
+        //});
+
+        //$('#wiki').show(1000, function () {
+        //   console.log("show");
+        //});
+
+        //$('#btn').click(function () {
+        //  $('#wiki').hide(1000, function () {
+        //     console.log("hidden");
+        // }); 
+        //});
+
+        //fadeIn()
+        //fadeout()
+        //fadetoggle()
+        //fadeto()
+
+        // $('#btn').click(function () {
+        //   $('#wiki').fadeToggle(5000);
+        //});
+
+        //Slide Methods - Callback Parameters are Optional
+
+        //$('#wiki').slideUp(1000, function () {
+        //    console.log('Done');
+        //});
+        //$('#wiki').slideDown(1000);
+        //$('#wiki').slideToggle(1000);     
+
+        //Animate function in jQuery
+
+        // $('#wiki').animate({
+        //   opacity: 0.3,
+        // height: '150px',
+        //   width:'350px'
+        //}, "slow");
+
+        //  $('#wiki').animate({
+
+        //     opacity: 0.3
+        // }, 4000);
+
+        //  $('#wiki').animate({
+
+        //     opacity: 0.9
+        //  }, 1000);
+
+        // $('#wiki').animate({
+
+        //      width: "300px"
+        //  }, 12000);
+
+        //$('#wiki').text();
+
+        // $('#ta').val('setting it to harry');
+        // $('#ta').html('setting it to harry');
+        // $('#ta').html('setting it to harry3');
+        // $('#inp').html('setting it to harry3');
+        // $('#inp').val('setting it to harry3');
+        // $('#inp').empty()
+        // $('#wiki').empty()
+        // $('#wiki').text('you are good')
+        // $('#wiki').remove()
+
+        // $('#wiki').addClass('my-class');
+        // $('#wiki').addClass('my-class-2');
+        // $('#wiki').removedClass('my-class-2');
+        // $('#wiki').removeClass('my-class-2');
+        //  $('#wiki').removeClass('my-class');
+        //  $('#wiki').css('background-color', 'red');
+        //  $('#wiki').css('background-color');
+        //  'rgb(255, 0, 0)'
+
+        // Ajax Using jQuery
+
+        // $.get('https://code.jquery.com/jquery-4.0.0.slim.js');
+        //$.get('https://code.jquery.com/jquery-4.0.0.slim.js', function (data, status) { alert(data); });
+        // $.get('https://code.jquery.com/jquery-4.0.0.slim.js', function (data, status) { alert(status); })
+        // $.post(
+        //   'https://code.jquery.com/jquery-4.0.0.slim.js',
+        //   {
+        //       name: 'Roman',
+        //       channel: 'Code By WebGrowthDigital'
+        //   },
+        //   function (data, status) {
+        //       alert(status);
+        //  }
+        //);
+        //{ readyState: 1, getResponseHeader: ƒ, getAllResponseHeaders: ƒ, setRequestHeader: ƒ, overrideMimeType: ƒ, … }
+
+        
+
+    });
+</script>
+
+</html>
